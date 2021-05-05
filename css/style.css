@@ -12,19 +12,26 @@ h1, h2 {
     font-family: 'Noto Serif', 'Times New Roman', Times, serif;
     padding: 10px 0 10px 0;
     font-size: 32px;
+    color:rgb(19, 19, 92);
  }
 
-.nav, .contact {
+ h2 {
+    font-size: 28px; 
+ }
+
+.nav {
     background-color: skyblue;
-    padding: 20px 0 20px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
 .nav_reference, .contact_reference{
     display: inline-block;
     font-weight: 400;
-    width: 200px;
+    width: 300px;
+    font-size: 18px;
     cursor: pointer;
+    padding-top: 10px;
 }
 
 .nav_reference>a {
@@ -38,15 +45,14 @@ h1, h2 {
 }
 
 .wrapper {
-    min-height: 700px;
+    min-height: 800px;
     background: url(../images/rain-light2.png) center center/cover no-repeat;
     padding: 50px 0;
 }
  
-.wrapper_name, #contact_title {
+.wrapper_name {
     text-align: center;
-    color:rgb(19, 19, 92);
-}
+ }
 
 .wrapper_about {
     display: flex;
@@ -82,13 +88,23 @@ p {
     line-height: 27px;
     color: rgb(19, 19, 92); 
 }
-  
+li {
+    padding: 10px 0;
+} 
+
 li:before{
     list-style-type: none;
     content: '\25ba'; /* Добавляем маркер в шестнадцатеричном формате*/
     padding-right: 15px; /* Расстояние от маркеров до текста */
  }
  
+ .contact {
+    height: 280px;
+    background-color: skyblue;
+    padding: 20px 0;
+    text-align: center;
+}
+
 .contact_reference>a {
     color:blue;
     text-decoration: none;
@@ -96,24 +112,20 @@ li:before{
 
 .contact_reference>a:hover {
     color:darkslateblue;
-    text-decoration: underline;
 }
 
-.button {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0 0 600px;
-	font-size: 14px;
+.contact_button {
+    font-size: 14px;
 	background-color: rgb(10, 79, 134);
     border: none;
 	border-radius: 7px;
 	width: 100px;
 	cursor: pointer;
     color: blanchedalmond;
-    padding: 10px;
+    padding: 10px 10px;
 }
     
-.button:hover {
+.contact_button:hover {
     transition: 1s all;
     background-color: gray;
     color: rgb(7, 59, 109);
@@ -121,8 +133,23 @@ li:before{
 
 .contact img {
     width: 50px;
-    height: 50px;
+    height: 34px;
 }
 
+.contact_wrapper_phone {
+    display: flex;
+    margin: 20px auto;
+    width: 400px;
+}
 
-		
+.contact_wrapper {
+    display: flex;
+    margin: 20px auto;
+    justify-content: space-between;
+    width: 900px;
+}
+
+.contact_social {
+    display: flex;
+    justify-content: space-between;
+}		
