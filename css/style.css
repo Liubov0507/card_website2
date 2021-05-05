@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.title {
+    font-family: 'Noto Serif', 'Times New Roman', Times, serif;
+ }
+
+.nav, .contact {
+    background-color: skyblue;
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
+
+.reference {
+    display: inline-block;
+    width: 200px;
+    cursor: pointer;
+}
+
+.reference>a {
+    color:blue;
+    text-decoration: none;
+}
+
+.reference>a:hover {
+    color:darkslateblue;
+    text-decoration: underline;
+}
+
+.wrapper {
+    min-height: 700px;
+    background: url(../images/rain-light2.png) center center/cover no-repeat;
+    padding: 50px 0;
+}
+ 
+.wrapper .name, #contact_title {
+    text-align: center;
+    color:rgb(19, 19, 92);
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    color:rgb(19, 19, 92);
+}
+
+.about .text {
+    margin-left: 100px;
+}
+
+.about .photo {
+   border: 1px solid grey;
+}
+
+.photo>img {
+    display: block;
+}
+
+.about h2 {
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+
+.about p {
+    color: rgb(7, 7, 7);
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+
+.about .list {
+    text-align: left;
+    list-style-type: none;
+    font-size: 20px;
+    color: rgb(7, 7, 7);
+}
+   
+.about li {
+    margin-bottom: 20px;
+}
+	
+li:before{
+    content: '\25ba'; /* Добавляем маркер в шестнадцатеричном формате*/
+    padding-right: 5px; /* Расстояние от маркеров до текста */
+    color: rgb(19, 19, 92); 
+}
+     
+
+.contact p {
+    margin: 10px 0;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0 600px;
+	font-size: 14px;
+	background-color: rgb(10, 79, 134);
+    border: none;
+	border-radius: 7px;
+	width: 100px;
+	cursor: pointer;
+    color: blanchedalmond;
+    padding: 10px;
+}
+    
+.button:hover {
+    transition: 1s all;
+    background-color: gray;
+    color: rgb(7, 59, 109);
+}
+
+.contact img {
+    width: 50px;
+    height: 50px;
+}
+
+
+		
