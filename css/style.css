@@ -68,10 +68,12 @@ h1, h2 {
 
 .wrapper_about_photo {
    border: 1px solid grey;
-}
+ }
 
 .wrapper_about_photo>img {
     display: block;
+    width: 200px;
+    height: 320px;
 }
 
 p {
