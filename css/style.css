@@ -8,14 +8,17 @@ html {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
-h1, h2 {
+.title {
     font-family: 'Noto Serif', 'Times New Roman', Times, serif;
     padding: 10px 0 10px 0;
     font-size: 32px;
     color:rgb(19, 19, 92);
  }
 
- h2 {
+ .subtitle {
+    font-family: 'Noto Serif', 'Times New Roman', Times, serif;
+    padding: 10px 0 10px 0;
+    color:rgb(19, 19, 92);
     font-size: 28px; 
  }
 
@@ -90,12 +93,15 @@ p {
     line-height: 27px;
     color: rgb(19, 19, 92); 
 }
+ul {
+    list-style-type: none;
+ }
+
 li {
     padding: 10px 0;
 } 
 
 li:before{
-    list-style-type: none;
     content: '\25ba'; /* Добавляем маркер в шестнадцатеричном формате*/
     padding-right: 15px; /* Расстояние от маркеров до текста */
  }
